@@ -12,12 +12,12 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Texer Demo","folderPath":"folders/Texer Demo.yy","name":"Texer Demo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Texer","folderPath":"folders/Texer.yy","name":"Texer","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Core","folderPath":"folders/Texer/Core.yy","name":"Core","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Functions","folderPath":"folders/Texer/Functions.yy","name":"Functions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Batching","folderPath":"folders/Texer/Functions/Batching.yy","name":"Batching","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Drawing","folderPath":"folders/Texer/Functions/Drawing.yy","name":"Drawing","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Images","folderPath":"folders/Texer/Functions/Images.yy","name":"Images","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Texer Atlas","folderPath":"folders/Texer/Functions/Texer Atlas.yy","name":"Texer Atlas","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Core","folderPath":"folders/Texer/Core.yy","name":"Core","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sources","folderPath":"folders/Texer/Sources.yy","name":"Sources","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],

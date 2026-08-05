@@ -19,7 +19,7 @@ function Texer(_default_size=1024) constructor {
 	
 	__batching = false
 	
-	__default_size = _size
+	__default_size = _default_size
 	__size = 0
 	
 	__images = []

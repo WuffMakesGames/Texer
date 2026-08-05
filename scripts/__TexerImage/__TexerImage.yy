@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__TexerImage",
   "parent":{
-    "name":"Classes",
-    "path":"folders/Texer/Classes.yy",
+    "name":"Core",
+    "path":"folders/Texer/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

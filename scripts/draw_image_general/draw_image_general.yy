@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_image_general",
   "parent":{
-    "name":"Images",
-    "path":"folders/Texer/Images.yy",
+    "name":"Drawing",
+    "path":"folders/Texer/Functions/Drawing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

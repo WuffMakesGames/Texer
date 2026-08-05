@@ -1,5 +1,5 @@
 /// Adds a file to the texture atlas
-/// @arg {Struct.__TexerAtlas} atlas	The texture atlas to add the rect to.
+/// @arg {Struct.Texer} atlas	The texture atlas to add the rect to.
 /// @arg {String} name				The name to be used when referencing the rect in the atlas.
 /// @arg {Real} width				The horizontal size of the rect.
 /// @arg {Real} height				The vertical size of the rect.

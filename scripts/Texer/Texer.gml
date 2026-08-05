@@ -1,4 +1,17 @@
-function __TexerAtlas(_size) constructor {
+/*===================================================================
+		 /$$$$$$$$                                     
+		|__  $$__/                                     
+		   | $$  /$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$ 
+		   | $$ /$$__  $$|  $$ /$$/ /$$__  $$ /$$__  $$
+		   | $$| $$$$$$$$ \  $$$$/ | $$$$$$$$| $$  \__/
+		   | $$| $$_____/  >$$  $$ | $$_____/| $$      
+		   | $$|  $$$$$$$ /$$/\  $$|  $$$$$$$| $$      
+		   |__/ \_______/|__/  \__/ \_______/|__/     v0.0.2
+===================================================================*/
+// Texer by WuffMakesGames
+
+/// @arg {Real} default_size Default width and height for the texture page
+function Texer(_default_size=1024) constructor {
 	
 	// Variables
 	__builder = new __TexerBuilder(self)

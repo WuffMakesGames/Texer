@@ -1,5 +1,5 @@
 /// Returns a __TexerImage with the same name
-/// @arg {Struct.__TexerAtlas} atlas
+/// @arg {Struct.Texer} atlas
 /// @arg {String} name
 /// @return {Struct.__TexerImage}
 function texer_get_image(_atlas, _name) {

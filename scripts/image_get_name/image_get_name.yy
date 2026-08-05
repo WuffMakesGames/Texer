@@ -6,7 +6,7 @@
   "name":"image_get_name",
   "parent":{
     "name":"Images",
-    "path":"folders/Texer/Images.yy",
+    "path":"folders/Texer/Functions/Images.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -17,8 +17,8 @@
   ],
   "name":"rmTexerDemo",
   "parent":{
-    "name":"TexerDemo",
-    "path":"folders/TexerDemo.yy",
+    "name":"Texer Demo",
+    "path":"folders/Texer Demo.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -9,8 +9,8 @@
   "name":"oTexerDemo",
   "overriddenProperties":[],
   "parent":{
-    "name":"TexerDemo",
-    "path":"folders/TexerDemo.yy",
+    "name":"Texer Demo",
+    "path":"folders/Texer Demo.yy",
   },
   "parentObjectId":null,
   "persistent":false,

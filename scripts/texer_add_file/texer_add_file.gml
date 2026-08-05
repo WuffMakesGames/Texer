@@ -1,5 +1,5 @@
 /// Adds a file to the texture atlas. Returns the image or -1 if the function fails.
-/// @arg {Struct.__TexerAtlas} atlas	The texture atlas to add the image to.
+/// @arg {Struct.Texer} atlas	The texture atlas to add the image to.
 /// @arg {String} name				The name to be used when referencing the image in the atlas.
 /// @arg {String} filename			The name (a string file path) of the file to add.
 /// @arg {Real} imgnum				Use to indicate the number of sub-images (1 for a single image or for a *.gif).

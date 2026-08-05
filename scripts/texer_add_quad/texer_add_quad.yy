@@ -6,7 +6,7 @@
   "name":"texer_add_quad",
   "parent":{
     "name":"Batching",
-    "path":"folders/Texer/Batching.yy",
+    "path":"folders/Texer/Functions/Batching.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,5 +1,5 @@
 /// @arg {String} name
-/// @arg {Struct.__TexerAtlas} atlas
+/// @arg {Struct.Texer} atlas
 /// @arg {Struct.__TexerSource} source
 function __TexerImage(_name, _atlas, _source) constructor {
 	__name = _name
@@ -25,7 +25,7 @@ function __TexerImage(_name, _atlas, _source) constructor {
 	}
 	
 	/// Returns the atlas containing the image
-	/// @return {Struct.__TexerAtlas}
+	/// @return {Struct.Texer}
 	static GetAtlas = function() {
 		return __atlas
 	}

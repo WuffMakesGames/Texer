@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerSource",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerSource",
+  "parent":{
+    "name":"Classes",
+    "path":"folders/Texer/Classes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

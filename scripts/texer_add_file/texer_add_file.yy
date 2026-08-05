@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"texer_add_file",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"texer_add_file",
+  "parent":{
+    "name":"Batching",
+    "path":"folders/Texer/Batching.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

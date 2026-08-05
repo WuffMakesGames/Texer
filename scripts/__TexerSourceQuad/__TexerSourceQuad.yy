@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerSourceQuad",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerSourceQuad",
+  "parent":{
+    "name":"Sources",
+    "path":"folders/Texer/Sources.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"image_exists",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"image_exists",
+  "parent":{
+    "name":"Images",
+    "path":"folders/Texer/Images.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

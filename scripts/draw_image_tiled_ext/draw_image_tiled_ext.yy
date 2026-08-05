@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_image_tiled_ext",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_image_tiled_ext",
+  "parent":{
+    "name":"Images",
+    "path":"folders/Texer/Images.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

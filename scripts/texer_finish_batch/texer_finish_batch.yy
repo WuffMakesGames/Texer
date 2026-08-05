@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"texer_finish_batch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"texer_finish_batch",
+  "parent":{
+    "name":"Batching",
+    "path":"folders/Texer/Batching.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

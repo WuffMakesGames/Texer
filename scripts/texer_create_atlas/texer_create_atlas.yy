@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"texer_create_atlas",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"texer_create_atlas",
+  "parent":{
+    "name":"Core",
+    "path":"folders/Texer/Core.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

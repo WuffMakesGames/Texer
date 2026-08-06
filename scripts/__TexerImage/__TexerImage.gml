@@ -40,8 +40,8 @@ function __TexerImage(_name, _atlas, _source) constructor {
 		draw_sprite_general(__atlas.__sprite, 0,
 			__x + _subimg * __source.__width + _left, __y + _top,
 			_width, _height,
-			_x - __source.__xorigin,
-			_y - __source.__yorigin,
+			_x - __source.__xorigin * _xscale,
+			_y - __source.__yorigin * _yscale,
 			_xscale, _yscale,
 			_rot, _c1, _c2, _c3, _c4, _alpha
 		)

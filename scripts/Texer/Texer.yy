@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Texer",
   "parent":{
-    "name":"Core",
-    "path":"folders/Texer/Core.yy",
+    "name":"Texer",
+    "path":"folders/Texer.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

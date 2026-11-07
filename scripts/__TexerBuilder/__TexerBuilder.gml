@@ -5,7 +5,7 @@ function __TexerBuilder(_atlas) constructor {
 	
 	/// Generates a texture page
 	static __Build = function() {
-		var _images = __atlas.__images
+		var _images = __atlas.__images.images
 		var _output = -1
 		
 		// Variables
@@ -78,6 +78,7 @@ function __TexerBuilder(_atlas) constructor {
 	/// Attempts to pack all sources into a texture page
 	/// @return {Struct}
 	static __PackSources = function(_size) {
+		var _images = __atlas.__images.images
 		var _fit_count = 0
 		var _result = {
 			success: false,
@@ -85,8 +86,8 @@ function __TexerBuilder(_atlas) constructor {
 		}
 		
 		// Fit all image sources
-		for (var i = 0; i < array_length(__atlas.__images); i++) {
-			var _image = __atlas.__images[i]
+		for (var i = 0; i < array_length(_images); i++) {
+			var _image = _images[i]
 			var _source = _image.__source
 			var _w = _source.__total_width
 			var _h = _source.__height
@@ -127,7 +128,7 @@ function __TexerBuilder(_atlas) constructor {
 		}
 		
 		// Update results
-		if (_fit_count >= array_length(__atlas.__images)) {
+		if (_fit_count >= array_length(_images)) {
 			_result.success = true
 		}
 		

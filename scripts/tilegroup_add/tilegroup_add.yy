@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"tilegroup_add_file",
+  "%Name":"tilegroup_add",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"tilegroup_add_file",
+  "name":"tilegroup_add",
   "parent":{
     "name":"Tilegroups",
     "path":"folders/Texer/Functions/Tilegroups.yy",

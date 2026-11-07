@@ -1,6 +1,6 @@
-/// @arg {String} name
-/// @arg {Struct.Texer} atlas
-/// @arg {Struct.__TexerSource} source
+/// @param {String} name
+/// @param {Struct.Texer} atlas
+/// @param {Struct.__TexerSource} source
 function __TexerImage(_name, _atlas, _source) constructor {
 	__name = _name
 	__atlas = _atlas
@@ -8,6 +8,7 @@ function __TexerImage(_name, _atlas, _source) constructor {
 	
 	__x = 0
 	__y = 0
+	_uvs = []
 	
 	//===============================================================
 	#region Public Methods

@@ -10,20 +10,18 @@
 ===================================================================*/
 // Texer by WuffMakesGames
 
-/// @arg {Real} default_size Default width and height for the texture page
+/// @param {Real} default_size Default width and height for the texture page
 function Texer(_default_size=1024) constructor {
 	
 	// Variables
 	__builder = new __TexerBuilder(self)
-	__sprite = -1
+	__images = new __TexerImageMap()
 	
 	__batching = false
 	
+	__sprite = -1
 	__default_size = _default_size
 	__size = 0
-	
-	__images = []
-	__images_map = {}
 	
 	// ==============================================================
 	#region Methods
@@ -38,44 +36,37 @@ function Texer(_default_size=1024) constructor {
 	/// @desc Safely clears memory and destroys the generated texture
 	static __Clear = function() {
 		if (sprite_exists(__sprite)) sprite_delete(__sprite)
-		__images = []
+		__images.__Clear()
 	}
 	
 	#endregion
 	// ==============================================================
 	#region Images
 	
-	/// @function __HasName(name)
-	/// @desc Checks if any image has a specific name
-	static __HasName = function(_name) {
-		return struct_exists(__images_map, _name)
-	}
-	
 	/// @function __HasImage(image)
 	/// @desc Checks if a TexerImage is registered in the atlas
-	/// @arg {Struct.__TexerImage} image
+	/// @param {Struct.__TexerImage} image
 	/// @return {Boolean}
-	static __HasImage = function(image) {
-		return array_contains(__images, image)
+	static __HasImage = function(_image) {
+		return __images.__HasImage(_image)
 	}
 	
 	/// @function __GetImage(name)
 	/// @desc Returns a __TexerImage with the same name
-	/// @arg {String} name
+	/// @param {String} name
 	/// @return {Struct.__TexerImage}
 	static __GetImage = function(_name) {
-		return struct_get(__images_map, _name)
+		return __images.__GetImage(_name)
 	}
 	
 	/// @function __AddImage(image)
 	/// @desc Adds a __TexerImage to the atlas
-	/// @arg {Struct.__TexerImage} image
+	/// @param {Struct.__TexerImage} image
 	static __AddImage = function(_image) {
-		if (__HasImage(_image.__name)) return show_debug_message("[Texer] Image with same name already registered: {0}", _image.__name)
-		array_push(__images, _image)
-		struct_set(__images_map, _image.__name, _image)
+		var _success = __images.__AddImage(_image)
+		if (!_success) return show_debug_message($"[Texer] Image with name \"{_image.__name}\"already registered")
 		
-		// Generate texture page if not batching
+		// Generate texture page when not batching
 		if (!__batching) __Build()
 	}
 	

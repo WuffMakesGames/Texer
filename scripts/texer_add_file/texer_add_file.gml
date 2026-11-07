@@ -1,12 +1,12 @@
-/// Adds a file to the texture atlas. Returns the image or -1 if the function fails.
-/// @arg {Struct.Texer} atlas	The texture atlas to add the image to.
-/// @arg {String} name				The name to be used when referencing the image in the atlas.
-/// @arg {String} filename			The name (a string file path) of the file to add.
-/// @arg {Real} imgnum				Use to indicate the number of sub-images (1 for a single image or for a *.gif).
-/// @arg {Boolean} removeback		Indicates whether to make all pixels with the background color (left-bottom pixel) transparent.
-/// @arg {Boolean} smooth			Indicates whether to smooth the edges if transparent.
-/// @arg {Real} xorigin				Indicate the x position of the origin in the sprite.
-/// @arg {Real} yorigin				Indicate the y position of the origin in the sprite.
+/// @desc Adds a file to the texture atlas. Returns the image or -1 if the function fails.
+/// @param {Struct.Texer} atlas	The texture atlas to add the image to.
+/// @param {String} name			The name to be used when referencing the image in the atlas.
+/// @param {String} filename		The name (a string file path) of the file to add.
+/// @param {Real} imgnum			Use to indicate the number of sub-images (1 for a single image or for a *.gif).
+/// @param {Boolean} removeback	Indicates whether to make all pixels with the background color (left-bottom pixel) transparent.
+/// @param {Boolean} smooth		Indicates whether to smooth the edges if transparent.
+/// @param {Real} xorigin			Indicate the x position of the origin in the sprite.
+/// @param {Real} yorigin			Indicate the y position of the origin in the sprite.
 /// @return {Struct.__TexerImage, -1}
 function texer_add_file(_atlas, _name, _filename, _imgnum, _removeback, _smooth, _xorig, _yorig) {
 	

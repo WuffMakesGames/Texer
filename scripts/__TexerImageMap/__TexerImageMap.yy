@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerImageMap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerImageMap",
+  "parent":{
+    "name":"Classes",
+    "path":"folders/Texer/(Internal)/Classes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

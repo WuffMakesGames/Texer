@@ -1,4 +1,4 @@
-/// @arg {Struct.__TexerImage} image
+/// @param {Struct.__TexerImage} image
 function draw_image_stretched(_image, _subimg, _x, _y, _w, _h) {
 	if (is_instanceof(_image, __TexerImage)) {
 		var _image_w = _image.__source.__width

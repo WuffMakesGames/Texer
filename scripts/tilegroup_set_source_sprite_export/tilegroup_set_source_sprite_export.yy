@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"texer_create_tilegroup",
+  "%Name":"tilegroup_set_source_sprite_export",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"texer_create_tilegroup",
+  "name":"tilegroup_set_source_sprite_export",
   "parent":{
     "name":"Tilegroups",
     "path":"folders/Texer/Functions/Tilegroups.yy",

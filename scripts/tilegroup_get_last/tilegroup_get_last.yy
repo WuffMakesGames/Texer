@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tilegroup_get_last",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tilegroup_get_last",
+  "parent":{
+    "name":"Tilegroups",
+    "path":"folders/Texer/Functions/Tilegroups.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

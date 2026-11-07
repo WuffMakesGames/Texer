@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__TexerBuilder",
   "parent":{
-    "name":"Core",
-    "path":"folders/Texer/Core.yy",
+    "name":"Classes",
+    "path":"folders/Texer/(Internal)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

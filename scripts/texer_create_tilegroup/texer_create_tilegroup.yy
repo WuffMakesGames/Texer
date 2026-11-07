@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"texer_create_tilegroup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"texer_create_tilegroup",
+  "parent":{
+    "name":"Tilegroups",
+    "path":"folders/Texer/Functions/Tilegroups.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

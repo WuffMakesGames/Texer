@@ -1,4 +1,4 @@
-function __TexerSourceFile(_source,_imgnum,_removeback,_smooth,_xorigin,_yorigin) : __TexerSource(_source,_imgnum,_xorigin,_yorigin) constructor {
+function __TexerSourceFile(_source, _imgnum, _removeback, _smooth, _xorigin, _yorigin) : __TexerSource(_source, _imgnum, _xorigin, _yorigin) constructor {
 	
 	__removeback = _removeback
 	__smooth = _smooth

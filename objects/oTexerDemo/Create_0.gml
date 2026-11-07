@@ -1,6 +1,6 @@
 /// @description 
 
-atlas = texer_create_atlas(512)
+atlas = texer_create_atlas("default", 512)
 
 // Begin batch
 texer_start_batch(atlas)

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__Texer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__Texer",
+  "parent":{
+    "name":"(Internal)",
+    "path":"folders/Texer/(Internal).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

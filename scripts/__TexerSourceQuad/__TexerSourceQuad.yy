@@ -6,7 +6,7 @@
   "name":"__TexerSourceQuad",
   "parent":{
     "name":"Sources",
-    "path":"folders/Texer/Sources.yy",
+    "path":"folders/Texer/(Internal)/Sources.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

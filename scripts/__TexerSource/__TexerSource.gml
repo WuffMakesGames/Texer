@@ -1,8 +1,7 @@
-function __TexerSource(_source, _imgnum, _xorigin, _yorigin, _width=0, _height=0) constructor {
+function __TexerSource(_imgnum, _xorigin, _yorigin, _width=0, _height=0) constructor {
 	
 	// Variables
-	__source		= _source
-	__loaded		= false
+	__sprite		= -1
 	
 	__imgnum		= _imgnum
 	__xorigin		= _xorigin
@@ -36,30 +35,39 @@ function __TexerSource(_source, _imgnum, _xorigin, _yorigin, _width=0, _height=0
 	//===============================================================
 	#region Private methods
 	
-	// Overrides
-	static __OnLoad = function() {}
-	static __OnUnload = function() {}
+	/// @function __GetSprite()
+	static __GetSprite = function() {
+		return -1
+	}
 	
-	/// Draws the source to the screen
-	/// Must be currently loaded 
-	static __Draw = function(_x, _y) {}
+	/// @function __Draw(x, y)
+	/// @desc Renders the source to the screen if it has been loaded.
+	static __Draw = function(_x, _y) {
+		if (!sprite_exists(__sprite)) return show_debug_message("[Texer] Attempted to draw unloaded source!")
+		draw_sprite_ext(__sprite, 0, _x, _y, 1, 1, 0, __color, __alpha)
+	}
 	
-	/// Loads the source for image packing
+	/// @function __Load()
+	/// @desc Loads the source for image packing.
 	static __Load = function() {
-		if (__loaded) return show_debug_message("[Texer] Couldn't load source. Already loaded")
-		__OnLoad()
-		__loaded = true
+		if (sprite_exists(__sprite)) return show_debug_message("[Texer] Couldn't load source. Already loaded.")
+		__sprite = __GetSprite()
 		
-		// Update variables
+		// Failed to load source
+		if (!sprite_exists(__sprite)) return show_debug_message("[Texer] Failed to load image source.")
+		
+		// Process source
+		__total_width = sprite_get_width(__sprite)
 		__width = __total_width / __imgnum
+		__height = sprite_get_height(__sprite)
 		__pixels = __total_width * __height
 	}
 	
-	/// Unloads the source, freeing memory
+	/// @function __Unload()
+	/// @desc Deletes the loaded sprite to free up memory.
 	static __Unload = function() {
-		if (!__loaded) return show_debug_message("[Texer] Couldn't unload source. Already unloaded")
-		__OnUnload()
-		__loaded = false
+		if (!sprite_exists(__sprite)) return show_debug_message("[Texer] Couldn't unload source. Already unloaded.")
+		sprite_delete(__sprite)
 	}
 	
 	#endregion

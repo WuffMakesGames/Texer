@@ -27,6 +27,13 @@ function __TexerImageMap() constructor {
 		return struct_get(images_map, _name)
 	}
 	
+	/// @function __GetImageAt(index)
+	/// @param {Real} index
+	/// @return {Struct.__TexerImage}
+	static __GetImageAt = function(_index) {
+		return images[_index]
+	}
+	
 	/// @function __AddImage(image)
 	/// @desc Adds a TexerImage to the map
 	/// @param {Struct.__TexerImage} image

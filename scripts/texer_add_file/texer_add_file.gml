@@ -16,7 +16,7 @@ function texer_add_file(_atlas, _name, _filename, _imgnum, _removeback, _smooth,
 		return -1
 	}
 	
-	// Crate and add source to atlas
+	// Create and add source to atlas
 	var _source = new __TexerSourceFile(_filename, _imgnum, _removeback, _smooth, _xorig, _yorig)
 	var _image = new __TexerImage(_name, _atlas, _source)
 	_atlas.__AddImage(_image)

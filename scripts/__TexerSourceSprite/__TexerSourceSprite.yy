@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerSourceSprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerSourceSprite",
+  "parent":{
+    "name":"Sources",
+    "path":"folders/Texer/(Internal)/Sources.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

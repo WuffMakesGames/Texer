@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerSourceSurface",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerSourceSurface",
+  "parent":{
+    "name":"Sources",
+    "path":"folders/Texer/(Internal)/Sources.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

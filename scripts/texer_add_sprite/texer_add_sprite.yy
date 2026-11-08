@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"texer_add_sprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"texer_add_sprite",
+  "parent":{
+    "name":"Batching",
+    "path":"folders/Texer/Functions/Batching.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -77,22 +77,23 @@ function __TexerTilegroup(_cellwidth, _cellheight)  constructor {
 				})
 				
 				// Continue
-				show_debug_message($"[Texer] Added tileset with {_tilecount} tiles to tilegroup.")
+				__TexerLoggerInfo($"Added tileset with {_tilecount} tiles to tilegroup.")
 				__totalCount += _tilecount
 				
 			}
 		}
 		
 		// Generate tileset
-		var _perimeter = ceil(sqrt(__totalCount))
+		var _perimeter = max(ceil(sqrt(__totalCount)), 1)
 		var _surface = surface_create(_perimeter * cellwidth, _perimeter * cellheight)
-		show_debug_message($"[Texer] Generating tilegroup with perimeter of ({_perimeter}x{_perimeter})")
+		__TexerLoggerInfo($"Generating tilegroup with perimeter of ({_perimeter}x{_perimeter})")
 		
+		// Set surface
 		surface_set_target(_surface)
 		draw_clear_alpha(c_white, 0.0)
 		
 		// Draw tiles to tileset
-		var _i, _sprite, _subimg, _x, _y, _drawX, _drawY;
+		var _i, _sprite, _subimg, _x, _y, _drawX, _drawY
 		var _index = 0
 		
 		for (_i = 0; _i < array_length(_sprites); _i++) {
@@ -108,14 +109,14 @@ function __TexerTilegroup(_cellwidth, _cellheight)  constructor {
 			}
 		}
 		
+		// Reset and free sprites
 		surface_reset_target()
-		
-		// Delete all sprites
 		array_foreach(_sprites, sprite_delete)
 		
 		// Return generated tileset
 		var _output = sprite_create_from_surface(_surface, 0, 0, surface_get_width(_surface), surface_get_height(_surface), false, false, 0, 0)
 		surface_free(_surface)
+		
 		return _output
 	}
 	

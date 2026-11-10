@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerAssertInstanceof",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerAssertInstanceof",
+  "parent":{
+    "name":"Debugging",
+    "path":"folders/Texer/(Internal)/Debugging.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

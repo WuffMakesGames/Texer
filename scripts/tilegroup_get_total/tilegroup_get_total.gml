@@ -1,4 +1,4 @@
 function tilegroup_get_total(_tilegroup) {
-	if (is_instanceof(_tilegroup, __TexerTilegroup)) return _tilegroup.GetTotal()
-	return -1
+	__TexerAssertInstanceof(_tilegroup, __TexerTilegroup, tilegroup_get_total)
+	return _tilegroup.GetTotal()
 }

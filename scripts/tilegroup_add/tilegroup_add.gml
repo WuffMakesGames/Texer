@@ -3,9 +3,8 @@
 /// @param {Struct.__TexerTilegroup} tilegroup
 /// @param {Struct.__TexerImage} image
 function tilegroup_add(_tilegroup, _image) {
-	if (is_instanceof(_tilegroup, __TexerTilegroup)) {
-		for (var _i = 1; _i < argument_count; _i++) {
-			_tilegroup.AddImage(argument[_i])
-		}
+	__TexerAssertInstanceof(_tilegroup, __TexerTilegroup, tilegroup_add)
+	for (var _i = 1; _i < argument_count; _i++) {
+		_tilegroup.AddImage(argument[_i])
 	}
 }

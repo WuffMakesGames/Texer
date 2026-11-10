@@ -27,22 +27,27 @@ surface_reset_target()
 texer_add_surface(atlas, "surf#Triangle", _surface)
 
 // Sprites
-texer_add_sprite(atlas, "missingSprite#1", sTexerMissing)
-texer_add_sprite(atlas, "missingSprite#2", sTexerMissing)
-texer_add_sprite(atlas, "missingSprite#3", sTexerMissing)
-texer_add_sprite(atlas, "missingSprite#4", sTexerMissing)
+//texer_add_sprite(atlas, "missingSprite#1", sTexerMissing)
+//texer_add_sprite(atlas, "missingSprite#2", sTexerMissing)
+//texer_add_sprite(atlas, "missingSprite#3", sTexerMissing)
+//texer_add_sprite(atlas, "missingSprite#4", sTexerMissing)
 
 // Tilesets
-tilesGrass = texer_add_quad(atlas, "tilesGrass", 64, 128, c_green)
-tilesDesert = texer_add_quad(atlas, "tilesDesert", 64, 16, c_orange)
+//tilesGrass = texer_add_quad(atlas, "tilesGrass", 64, 128, c_green)
+//tilesDesert = texer_add_quad(atlas, "tilesDesert", 64, 16, c_orange)
 tilesSprite = texer_add_sprite(atlas, "tilesSprite", sTexerDemoTiles)
+tilesExtra = texer_add_sprite(atlas, "tilesExtra", sTexerDemoTilesExt)
 
 // Add a tilegroup
-tilegroup = texer_add_tilegroup(atlas, "tilegroupMain", tilegroupMain)
-tilegroup_add(tilegroup, tilesGrass, tilesDesert, tilesSprite)
+tilegroup_add(tilegroupMain, tilesSprite, tilesExtra)
+texer_add_tilegroup(atlas, "tilegroupMain", tilegroupMain)
 
 // Finish batch
 texer_finish_batch(atlas)
 
 // Free surfaces
 surface_free(_surface)
+
+//show_debug_message(tilegroup_get_first(tilegroupMain, tilesGrass))
+//show_debug_message(tilegroup_get_first(tilegroupMain, tilesDesert))
+show_debug_message(tilegroup_get_first(tilegroupMain, tilesSprite))

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerLoggerWarning",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerLoggerWarning",
+  "parent":{
+    "name":"Debugging",
+    "path":"folders/Texer/(Internal)/Debugging.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

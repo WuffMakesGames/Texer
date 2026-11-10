@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__TexerSourceTilegroup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__TexerSourceTilegroup",
+  "parent":{
+    "name":"Sources",
+    "path":"folders/Texer/(Internal)/Sources.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

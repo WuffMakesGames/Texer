@@ -44,7 +44,9 @@ function __TexerSource(_imgnum, _xorigin, _yorigin, _width=0, _height=0) constru
 	/// @desc Renders the source to the screen if it has been loaded.
 	static __Draw = function(_x, _y) {
 		if (!sprite_exists(__sprite)) return show_debug_message("[Texer] Attempted to draw unloaded source!")
-		draw_sprite_ext(__sprite, 0, _x, _y, 1, 1, 0, __color, __alpha)
+		for (var _i = 0; _i < sprite_get_number(__sprite); _i++) {
+			draw_sprite_ext(__sprite, _i, _x + _i * __width, _y, 1, 1, 0, __color, __alpha)
+		}
 	}
 	
 	/// @function __Load()
@@ -57,7 +59,7 @@ function __TexerSource(_imgnum, _xorigin, _yorigin, _width=0, _height=0) constru
 		if (!sprite_exists(__sprite)) return show_debug_message("[Texer] Failed to load image source.")
 		
 		// Process source
-		__total_width = sprite_get_width(__sprite)
+		__total_width = sprite_get_width(__sprite) * sprite_get_number(__sprite)
 		__width = __total_width / __imgnum
 		__height = sprite_get_height(__sprite)
 		__pixels = __total_width * __height

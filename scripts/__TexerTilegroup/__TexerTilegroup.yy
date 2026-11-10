@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__TexerTilegroup",
   "parent":{
-    "name":"Sources",
-    "path":"folders/Texer/(Internal)/Sources.yy",
+    "name":"Classes",
+    "path":"folders/Texer/(Internal)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

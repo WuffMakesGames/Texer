@@ -2,7 +2,9 @@
 
 randomize()
 
+// Variables
 atlas = texer_create_atlas("default", 512)
+tilegroupMain = texer_create_tilegroup(16, 16)
 
 // Begin batch
 texer_start_batch(atlas)
@@ -33,10 +35,11 @@ texer_add_sprite(atlas, "missingSprite#4", sTexerMissing)
 // Tilesets
 tilesGrass = texer_add_quad(atlas, "tilesGrass", 64, 128, c_green)
 tilesDesert = texer_add_quad(atlas, "tilesDesert", 64, 16, c_orange)
+tilesSprite = texer_add_sprite(atlas, "tilesSprite", sTexerDemoTiles)
 
 // Add a tilegroup
-tilegroup = texer_add_tilegroup(atlas, "tilesetMain", 16, 16)
-tilegroup_add(tilegroup, tilesGrass, tilesDesert)
+tilegroup = texer_add_tilegroup(atlas, "tilegroupMain", tilegroupMain)
+tilegroup_add(tilegroup, tilesGrass, tilesDesert, tilesSprite)
 
 // Finish batch
 texer_finish_batch(atlas)

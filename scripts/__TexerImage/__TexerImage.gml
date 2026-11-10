@@ -8,7 +8,7 @@ function __TexerImage(_name, _atlas, _source) constructor {
 	
 	__x = 0
 	__y = 0
-	_uvs = []
+	__uvs = []
 	
 	//===============================================================
 	#region Public Methods
@@ -66,7 +66,7 @@ function __TexerImage(_name, _atlas, _source) constructor {
 		var _view_h = camera_get_view_height(view_camera[view_current])
 		
 		var _tiles_x = ceil(_view_w / _w) + 1
-		var _tiles_y = ceil(_view_w / _w) + 1
+		var _tiles_y = ceil(_view_h / _h) + 1
 		var _total_x = _tiles_x * _w
 		var _total_y = _tiles_y * _h
 		

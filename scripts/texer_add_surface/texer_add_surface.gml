@@ -1,4 +1,8 @@
 function texer_add_surface(_atlas, _name, _surface, _imgnum=1, _removeback=false, _smooth=false, _xorig=0, _yorig=0) {
+	if (is_string(_atlas)) _atlas = texer_get_atlas(_atlas)
+	
+	// Assertion checks
+	__TexerAssertInstanceof(_atlas, Texer, texer_add_surface)
 	
 	// Surface doesn't exist
 	if (!surface_exists(_surface)) {

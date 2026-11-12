@@ -6,6 +6,12 @@
 /// @param {Real} color			The color of the rect.
 /// @return {Struct.__TexerImage}
 function texer_add_quad(_atlas, _name, _w, _h, _color) {
+	if (is_string(_atlas)) _atlas = texer_get_atlas(_atlas)
+	
+	// Assertion checks
+	__TexerAssertInstanceof(_atlas, Texer, texer_add_quad)
+	
+	// Create and add source to atlas
 	var _source = new __TexerSourceQuad(_w, _h, _color)
 	var _image = new __TexerImage(_name, _atlas, _source)
 	_atlas.__AddImage(_image)

@@ -50,6 +50,7 @@ function __TexerImage(_name, _atlas, _source) constructor {
 	
 	/// Draws the image tiled across the view
 	static __DrawTiled = function(_subimg, _x, _y, _xscale, _yscale, _color, _alpha) {
+		_subimg = floor(_subimg % __source.__imgnum)
 		var _sprite = __atlas.__sprite
 		
 		var _sprite_x = __x + _subimg * __source.__width

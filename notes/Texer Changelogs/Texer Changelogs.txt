@@ -1,0 +1,6 @@
+v0.0.24-alpha
+- Added Tilegroups
+- Added Tilegroup sources
+- Atlases can be accessed by name
+- Added Sprite sources
+- Added Surface sources

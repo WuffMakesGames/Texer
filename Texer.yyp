@@ -34,6 +34,7 @@
   },
   "name":"Texer",
   "resources":[
+    {"id":{"name":"Texer Changelogs","path":"notes/Texer Changelogs/Texer Changelogs.yy",},},
     {"id":{"name":"oTexerDemo","path":"objects/oTexerDemo/oTexerDemo.yy",},},
     {"id":{"name":"rmTexerDemo","path":"rooms/rmTexerDemo/rmTexerDemo.yy",},},
     {"id":{"name":"__Texer","path":"scripts/__Texer/__Texer.yy",},},

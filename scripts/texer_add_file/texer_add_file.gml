@@ -9,6 +9,10 @@
 /// @param {Real} yorigin			Indicate the y position of the origin in the sprite.
 /// @return {Struct.__TexerImage, -1}
 function texer_add_file(_atlas, _name, _filename, _imgnum, _removeback, _smooth, _xorig, _yorig) {
+	if (is_string(_atlas)) _atlas = texer_get_atlas(_atlas)
+	
+	// Assertion checks
+	__TexerAssertInstanceof(_atlas, Texer, texer_add_file)
 	
 	// File doesn't exist
 	if (!file_exists(_filename)) {

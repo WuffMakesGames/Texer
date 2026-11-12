@@ -93,7 +93,6 @@
     {"id":{"name":"tilegroup_set_source_sprite_export","path":"scripts/tilegroup_set_source_sprite_export/tilegroup_set_source_sprite_export.yy",},},
     {"id":{"name":"sTexerDemoTiles","path":"sprites/sTexerDemoTiles/sTexerDemoTiles.yy",},},
     {"id":{"name":"sTexerDemoTilesExt","path":"sprites/sTexerDemoTilesExt/sTexerDemoTilesExt.yy",},},
-    {"id":{"name":"sTexerMissing","path":"sprites/sTexerMissing/sTexerMissing.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
